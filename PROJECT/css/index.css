@@ -1,0 +1,184 @@
+/* css Reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* navigation bar */
+
+#naviBar{
+
+    display: flex;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: sticky;
+
+}
+
+#naviBar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 79%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* Navigation Bar ka logo and imaage */
+
+#logo{
+    margin: 8px 20px;  
+}
+
+#logo img{
+    height: 60px;
+    width: 70px;
+    padding: 10px 10px;
+    margin: 3px 6px;
+}
+
+
+/* navi bar ka list styling */
+#naviBar{
+    position: relative;
+}
+
+#naviBar ul{
+    display: flex;
+}
+
+
+#naviBar ul li{
+    color: rgb(68, 46, 30);
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#naviBar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration :none;
+}
+
+
+ #naviBar ul li a:hover{
+    color: rgb(33, 12, 86);
+    background-color: #ccc;
+    opacity:0.1 ;
+    border-radius: 20px;
+
+}
+
+/* home section editing */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 19px 200px;
+    height: 285px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../images/wp.jpeg')no-repeat center center/cover;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1{
+    color: rgb(46, 25, 25);
+    text-align: center;
+
+}
+
+#home p{
+    color: rgb(46, 25, 25);
+    text-align: center;
+    font-size: 1.6rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+/* features */
+
+#services{
+    margin: 34px;
+    display: flex;
+    align-items: center;
+
+
+}
+#alpha{
+    padding-top: 144px;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 10px;
+    margin: 6px 12px;
+    border-radius: 24px;
+    background-color: rgb(237, 228, 220);
+
+}
+
+#services .box img{
+    height: 300px;
+    width: 400px;
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+
+}
+
+
+
+/* utility class */
+
+.h-primary{
+    font-size:3.8rem;
+    padding: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.h-secondary{
+    font-size: 2.2rem;
+    padding:12px;
+    font-family:'Courier New', Courier, monospace ;
+}
+
+
+.center{
+    text-align: center;
+}
+
+#footer{
+    background-color: rgb(118, 78, 49);
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    padding-bottom: 25px;
+    color: aliceblue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+
+
+
