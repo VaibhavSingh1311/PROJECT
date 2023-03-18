@@ -1,0 +1,66 @@
+*{
+  box-sizing: border-box;
+  
+}
+body{
+    background-image: url(newhostel.jpeg);
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 18px;
+    padding: 10px;
+}
+#container{
+    padding: 100px 300px 180px 300px;
+    border: 3px;
+    border-radius: 8px;
+}
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+input[type="studentId"],
+select,textarea{
+    width: 100%;
+    padding: 17px;
+    border: 3px;
+    border-radius: 2px;
+}
+
+.main_heading{
+    text-align: center;
+}
+input[type="submit"]{
+    background-color: #e2bfbf;
+    color:black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 2px;
+    cursor: crosshair;
+    width: 47%;
+    transition: width 2s ;
+
+}
+input[type="reset"]{
+    background-color: #e2bfbf;
+    color:black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 2px;
+    cursor: crosshair;
+    width: 47%;
+    transition: width 2s ;
+
+}
+input[type="submit"]:hover{
+    padding: 12px 20px ;
+    background-color: #db9f9f;
+    width: 50%;
+}
+input[type="reset"]:hover{
+    padding: 12px 20px;
+    background-color: #db9f9f;
+    width: 50%;
+}
