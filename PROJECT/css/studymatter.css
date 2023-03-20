@@ -1,0 +1,32 @@
+#services{
+    margin: 34px;
+    display: flex;
+    align-items: center;
+
+
+}
+#alpha{
+    padding-top: 144px;
+}
+
+#services .box{
+    border: 2px solid rgb(249, 6, 228);
+    padding: 10px;
+    margin: 6px 12px;
+    border-radius: 24px;
+    background-color: rgb(54, 16, 70);
+
+}
+
+#services .box img{
+    height: 300px;
+    width: 400px;
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+
+}
+h2{
+color: #fff;
+text-align: center;
+}
