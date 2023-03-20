@@ -4,32 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="css/complain.css" >
     <title>Hostel Complain</title>
+    <style>
+      body{
+         background-image: url(images/hostbg.jpg);
+         background-repeat: repeat;
+      }
+    </style>
 
     
 </head>
 <body>
-   <form action="backend.mongo">
+   <form action="complain.php" method="post">
       <div id="container">
     <h1 class="main_heading">Hostel Complain</h1>
     <hr>
     <hr>
-    <h2>Contact Imformation</h2>
+    <h2>Contact Information</h2>
     
        <p>
-         Name: *<input type="text" placeholder="adeeb shekh" required>
+         Name: *<textarea type="name" id="name" name="name" cols="30" rows="2" placeholder="enter your name" required></textarea>
        </p>
     
-       <p>Room No:<textarea name="address" id="address" cols="30" rows="2"  placeholder="SVBH 416"></textarea></p>
-        <p>Student ID:*<input type="studentId" name="studentId" id="studentId" placeholder="20223000" required></p>
-        <p>Phone no.:*<input type="phone" name="phone" id="phone" placeholder="7588964125" required></p>
-        <p>Email*<input type="email" name="email" id="email" placeholder="@gmail.com" required></p>
+       <p>Room No:<textarea name="room" id="room" cols="30" rows="2"  placeholder="enter your roomnuber"></textarea></p>
+
+        <p>Student ID:*<input type="studentId" name="studentId" id="studentId" placeholder="enter your registration ID" required></p>
+        <p>Phone no.:*<input type="phone" name="phone" id="phone" placeholder="enter phone number" required></p>
+        <p>Email*<input type="email" name="email" id="email" placeholder="Eg: abcd@gmail.com" required></p>
     <h2>Complain Information</h2>
 
     <p>Complain date: <input type="date" name="exp_date" id="exp_date"></p>
     <p>
-        Complain Type:*
+        Complain Type: 
         <select name="complain_type" id="complain_type" required>
         <option value="">--Select a complain Type--</option>
         <option value="electricity issue">Electricity issue</option>
@@ -41,10 +48,11 @@
        </select>
     </p>
 
-     <p>Complain description:<textarea name="complain" id="complain" cols="30" rows="5"  placeholder="Poor working of socket"></textarea></p>
+     <p>Complain description:
+      <textarea name="complain" id="complain" cols="30" rows="5"  placeholder="add the descriptiion about your problem"></textarea></p>
 
      <br>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" id="Submit" name="Submit">
     <input type="reset" value="Reset">
    </form>
 </div>
